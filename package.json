@@ -72,7 +72,7 @@
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
     "predeploy:docs": "npm run build:docs",
-    "deploy:docs": "run-p rimraf node_modules/gh-pages/.cache gh-pages -d build"
+    "deploy:docs": "run-p rimraf node_modules/gh-npages/.cache gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
