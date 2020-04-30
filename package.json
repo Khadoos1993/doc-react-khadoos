@@ -71,7 +71,7 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy:docs": "npm run build:docs",
+    "predeploy:docs": "dnpm run build:docs",
     "deploy:docs": "gh-pages -d build"
   },
   "eslintConfig": {
