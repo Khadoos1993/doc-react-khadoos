@@ -71,8 +71,9 @@
     "gen:docs-watch": "npm run gen:docs -- --watch",
     "build:docs": "node scripts/build.js",
     "test": "node scripts/test.js",
-    "predeploy:docs": "npm run build:docs",
-    "deploy:docs": "run-p rimraf node_modules/gh-npages/.cache gh-pages -d build"
+    "remove:gh-pages:cache": "rimraf node_modules/gh-pages/.cache",
+    "predeploy:docs": "run-p build:docs remove:gh-pages:cache",
+    "deploy:docs": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
