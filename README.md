@@ -10,4 +10,4 @@ npm install doc-react-khadoos
 
 # Docs
 
-[Component Documentation](http://localhost:3000)
+[Component Documentation](https://github.com/Khadoos1993/doc-react-khadoos)
